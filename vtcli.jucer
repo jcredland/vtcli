@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="veXyTq" name="vtcli" projectType="consoleapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.vtcli" includeBinaryInAppConfig="1"
+              jucerVersion="3.1.1">
+  <MAINGROUP id="fnV6X1" name="vtcli">
+    <GROUP id="{FC437B52-2729-C9FC-4DE2-8D90AB3A1D11}" name="Source">
+      <FILE id="RwN3xW" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="vtcli"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="2" targetName="vtcli"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../big-kick/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_events" path="../big-kick/JuceLibraryCode/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../big-kick/JuceLibraryCode/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
